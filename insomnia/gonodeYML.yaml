@@ -1,0 +1,530 @@
+_type: export
+__export_format: 4
+__export_date: 2019-10-07T16:44:10.518Z
+__export_source: insomnia.desktop.app:v7.0.0
+resources:
+  - _id: req_77036cfcdb774e1389a22bce0ff48162
+    authentication:
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU3MDI5MDM4Nn0.dxFd26KJ86-OP8opN7lJtu1C_H8Ty5kji9mf9plpJ-Y
+      type: bearer
+    body: {}
+    created: 1570290547650
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1570290547650
+    method: GET
+    modified: 1570309811974
+    name: Index
+    parameters: []
+    parentId: fld_8f8af124789a478ba4a5d41732cb2377
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ base_url  }}/projects"
+    _type: request
+  - _id: fld_8f8af124789a478ba4a5d41732cb2377
+    created: 1570290536402
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1570290536402
+    modified: 1570290536402
+    name: Projects
+    parentId: wrk_3bdf963cc7a64f8091b9d3fe8d2cb8ac
+    _type: request_group
+  - _id: wrk_3bdf963cc7a64f8091b9d3fe8d2cb8ac
+    created: 1570200556934
+    description: ""
+    modified: 1570200556934
+    name: gonode
+    parentId: null
+    _type: workspace
+  - _id: req_1fe1d078688b4c8ca711a1e70e2adde7
+    authentication:
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU3MDI5MDM4Nn0.dxFd26KJ86-OP8opN7lJtu1C_H8Ty5kji9mf9plpJ-Y
+      type: bearer
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"title": "Projeto em Node",
+        	"description": "teste"
+        }
+    created: 1570290933400
+    description: ""
+    headers:
+      - id: pair_efac4ee18cf6443ca16363db3f32315a
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1570249921260.5
+    method: POST
+    modified: 1570308744422
+    name: Create
+    parameters: []
+    parentId: fld_8f8af124789a478ba4a5d41732cb2377
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ base_url  }}/projects"
+    _type: request
+  - _id: req_73ecbf6bc690485ab6d370b580bd48a8
+    authentication:
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU3MDI5MDM4Nn0.dxFd26KJ86-OP8opN7lJtu1C_H8Ty5kji9mf9plpJ-Y
+      type: bearer
+    body: {}
+    created: 1570291448091
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1570249921210.5
+    method: GET
+    modified: 1570299592415
+    name: Show
+    parameters: []
+    parentId: fld_8f8af124789a478ba4a5d41732cb2377
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ base_url  }}/projects/6"
+    _type: request
+  - _id: req_b50fa531ab4445f495586a8908c36457
+    authentication:
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU3MDI5MDM4Nn0.dxFd26KJ86-OP8opN7lJtu1C_H8Ty5kji9mf9plpJ-Y
+      type: bearer
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"title": "Projeto em React Native",
+        	"description": "teste"
+        }
+    created: 1570291829610
+    description: ""
+    headers:
+      - id: pair_efac4ee18cf6443ca16363db3f32315a
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1570249921160.5
+    method: PUT
+    modified: 1570308916196
+    name: Update
+    parameters: []
+    parentId: fld_8f8af124789a478ba4a5d41732cb2377
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ base_url  }}/projects/6"
+    _type: request
+  - _id: req_06af077a9ae54e3992a06546778abf2e
+    authentication:
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU3MDI5MDM4Nn0.dxFd26KJ86-OP8opN7lJtu1C_H8Ty5kji9mf9plpJ-Y
+      type: bearer
+    body: {}
+    created: 1570292001201
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1570229608015.75
+    method: DELETE
+    modified: 1570292109160
+    name: Delete
+    parameters: []
+    parentId: fld_8f8af124789a478ba4a5d41732cb2377
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ base_url  }}/projects/2"
+    _type: request
+  - _id: req_06f49fa3784e4942aad9684c15a95ecc
+    authentication:
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU3MDI5MDM4Nn0.dxFd26KJ86-OP8opN7lJtu1C_H8Ty5kji9mf9plpJ-Y
+      type: bearer
+    body: {}
+    created: 1570297627651
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1570290547650
+    method: GET
+    modified: 1570299487742
+    name: Index
+    parameters: []
+    parentId: fld_14f0a584ae094400af45e662e3267134
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ base_url  }}/projects/6/tasks"
+    _type: request
+  - _id: fld_14f0a584ae094400af45e662e3267134
+    created: 1570297627636
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1570285754600
+    modified: 1570297645865
+    name: Tasks
+    parentId: wrk_3bdf963cc7a64f8091b9d3fe8d2cb8ac
+    _type: request_group
+  - _id: req_28ba73edbb4947f790c8647845823023
+    authentication:
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU3MDI5MDM4Nn0.dxFd26KJ86-OP8opN7lJtu1C_H8Ty5kji9mf9plpJ-Y
+      type: bearer
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"title": "Tarefa aprender express",
+        	"user_id": 1,
+        	"file_id": 1,
+        	"due_date": "2019-09-04 18:00:00"
+        }
+    created: 1570297627653
+    description: ""
+    headers:
+      - id: pair_efac4ee18cf6443ca16363db3f32315a
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1570249921260.5
+    method: POST
+    modified: 1570459310282
+    name: Create
+    parameters: []
+    parentId: fld_14f0a584ae094400af45e662e3267134
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ base_url  }}/projects/6/tasks"
+    _type: request
+  - _id: req_e4df14d3a0fd42c981131d28b82e0879
+    authentication:
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU3MDI5MDM4Nn0.dxFd26KJ86-OP8opN7lJtu1C_H8Ty5kji9mf9plpJ-Y
+      type: bearer
+    body: {}
+    created: 1570297627655
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1570249921210.5
+    method: GET
+    modified: 1570299752008
+    name: Show
+    parameters: []
+    parentId: fld_14f0a584ae094400af45e662e3267134
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ base_url  }}/projects/6/tasks/4"
+    _type: request
+  - _id: req_145dacc11f5147a683d375daa844001f
+    authentication:
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU3MDI5MDM4Nn0.dxFd26KJ86-OP8opN7lJtu1C_H8Ty5kji9mf9plpJ-Y
+      type: bearer
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"title": "Tarefa #3 aprender CRUD com express",
+        	"user_id": 2
+        }
+    created: 1570297627657
+    description: ""
+    headers:
+      - id: pair_efac4ee18cf6443ca16363db3f32315a
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1570249921160.5
+    method: PUT
+    modified: 1570455854780
+    name: Update
+    parameters: []
+    parentId: fld_14f0a584ae094400af45e662e3267134
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ base_url  }}/projects/6/tasks/16"
+    _type: request
+  - _id: req_1c7155bcb0324da0b6fc442f213a519e
+    authentication:
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU3MDI5MDM4Nn0.dxFd26KJ86-OP8opN7lJtu1C_H8Ty5kji9mf9plpJ-Y
+      type: bearer
+    body: {}
+    created: 1570297627660
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1570229608015.75
+    method: DELETE
+    modified: 1570299795341
+    name: Delete
+    parameters: []
+    parentId: fld_14f0a584ae094400af45e662e3267134
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ base_url  }}/projects/6/tasks/"
+    _type: request
+  - _id: req_cd8863c4fb494b27a2e82d95731af09f
+    authentication: {}
+    body: {}
+    created: 1570282220082
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1570208354018.25
+    method: GET
+    modified: 1570282505583
+    name: Show
+    parameters: []
+    parentId: fld_3bce39ffe20c45169e1e34148e98bb63
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ base_url  }}/files/2"
+    _type: request
+  - _id: fld_3bce39ffe20c45169e1e34148e98bb63
+    created: 1570280972797
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1570280972798
+    modified: 1570280972797
+    name: Files
+    parentId: wrk_3bdf963cc7a64f8091b9d3fe8d2cb8ac
+    _type: request_group
+  - _id: req_b031457a4a954626b77ff68d068d3ec6
+    authentication:
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU3MDI5MDM4Nn0.dxFd26KJ86-OP8opN7lJtu1C_H8Ty5kji9mf9plpJ-Y
+      type: bearer
+    body:
+      mimeType: multipart/form-data
+      params:
+        - fileName: /home/douglas/Pictures/banner.png
+          id: pair_2c70647375b04f46bcba0e042f7a7ea2
+          name: file
+          type: file
+          value: ""
+    created: 1570280978030
+    description: ""
+    headers:
+      - id: pair_6d0188f11f2043e9808a406bf3f8383a
+        name: Content-Type
+        value: multipart/form-data
+    isPrivate: false
+    metaSortKey: -1570208353968.25
+    method: POST
+    modified: 1570290424712
+    name: Create
+    parameters: []
+    parentId: fld_3bce39ffe20c45169e1e34148e98bb63
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ base_url  }}/files"
+    _type: request
+  - _id: req_827ce186d3ed423882d814a8681fa99d
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email": "douglas@trexcode.com.br",
+        	"redirect_url": "http://www.meusistema.com/resetar_senha"
+        }
+    created: 1570209294871
+    description: ""
+    headers:
+      - id: pair_6d0188f11f2043e9808a406bf3f8383a
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1570209294871
+    method: POST
+    modified: 1570216038056
+    name: Create
+    parameters: []
+    parentId: fld_a80e5350c50b4276805b37283e90897e
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ base_url  }}/passwords"
+    _type: request
+  - _id: fld_a80e5350c50b4276805b37283e90897e
+    created: 1570209284256
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1570209284256
+    modified: 1570209284256
+    name: ForgotPassword
+    parentId: wrk_3bdf963cc7a64f8091b9d3fe8d2cb8ac
+    _type: request_group
+  - _id: req_f8639951b97b4c8185b3b15f5eeca077
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"token": "53bd68d8d8623131ef92",
+        	"password": "123123",
+        	"password_confirmation": "123123"
+        }
+    created: 1570216981592
+    description: ""
+    headers:
+      - id: pair_6d0188f11f2043e9808a406bf3f8383a
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1570207413065.5
+    method: PUT
+    modified: 1570307910398
+    name: Update
+    parameters: []
+    parentId: fld_a80e5350c50b4276805b37283e90897e
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ base_url  }}/passwords"
+    _type: request
+  - _id: req_7ed7d268064a437c82b08a716c88ee4d
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email": "douglas@trexcode.com.br",
+        	"password": "123123"
+        }
+    created: 1570205535455
+    description: ""
+    headers:
+      - id: pair_f49a80435ef34620b84b17117d393317
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1570205531260
+    method: POST
+    modified: 1570290384573
+    name: Create
+    parameters: []
+    parentId: fld_9e40e559adcf4505ba88a37fe86ac8f3
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ base_url  }}/sessions"
+    _type: request
+  - _id: fld_9e40e559adcf4505ba88a37fe86ac8f3
+    created: 1570205531210
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1570205531210
+    modified: 1570205531210
+    name: Sessions
+    parentId: wrk_3bdf963cc7a64f8091b9d3fe8d2cb8ac
+    _type: request_group
+  - _id: req_5279f85987d442b2ba94f9ddc4ad42a3
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"username": "douglasmartins123",
+        	"email": "douglas123@trexcode.com.br",
+        	"password": "123456",
+        	"password_confirmation": "123456",
+        	"addresses": [
+        		{
+        			"street": "Rua teste",
+        			"number": 20,
+        			"city": "cidade teste",
+        			"state": "SP"
+        		}
+        	]
+        }
+    created: 1570200591197
+    description: ""
+    headers:
+      - id: pair_f49a80435ef34620b84b17117d393317
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1570200591198
+    method: POST
+    modified: 1570464324688
+    name: Create
+    parameters: []
+    parentId: fld_78acb17f79814f13a247d5affc869899
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ base_url  }}/users"
+    _type: request
+  - _id: fld_78acb17f79814f13a247d5affc869899
+    created: 1570200579641
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1570200579641
+    modified: 1570200579641
+    name: Users
+    parentId: wrk_3bdf963cc7a64f8091b9d3fe8d2cb8ac
+    _type: request_group
+  - _id: env_1f3c692de6ca6fbd9e129dd36827a75924400df1
+    color: null
+    created: 1570200556953
+    data:
+      base_url: http://localhost:3333
+    dataPropertyOrder:
+      "&":
+        - base_url
+    isPrivate: false
+    metaSortKey: 1570200556953
+    modified: 1570200640322
+    name: Base Environment
+    parentId: wrk_3bdf963cc7a64f8091b9d3fe8d2cb8ac
+    _type: environment
+  - _id: jar_1f3c692de6ca6fbd9e129dd36827a75924400df1
+    cookies: []
+    created: 1570200556957
+    modified: 1570200556957
+    name: Default Jar
+    parentId: wrk_3bdf963cc7a64f8091b9d3fe8d2cb8ac
+    _type: cookie_jar
